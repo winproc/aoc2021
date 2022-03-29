@@ -23,7 +23,7 @@ int main() {
             int inc = char_to_int(input_buffer[i]);
             h_distance += char_to_int(input_buffer[i]);
             depth += (inc * aim);         
-
+            
         } else if (input_buffer[i] == 'd') { // starting char of 'down'
             i += (3 + offset);
             aim += char_to_int(input_buffer[i]);
