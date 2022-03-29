@@ -1,12 +1,5 @@
 #include <stdio.h>
 
-int pow_l(int x, int p) {
-    int temp = x;
-    for (int i = 0; i < p - 1; i++) {
-        x *= temp;
-    }
-    return x;
-}
 
 int main() {
     const int nxbin_offset = 13;
@@ -99,7 +92,7 @@ int main() {
 
     co_rating = parsed_buffer_co[ptr];
     co_rating[nxbin_offset - 1] = '\0';
-    
+
     int gm_result = 0;
     int ep_result = 0;
 
